@@ -184,7 +184,7 @@ class TSP_GUI(QWidget):
             tracemalloc.start()
             start_time = time.time()
 
-            path, cost = GBFS2Expan.greedy_best_first_search_with_backup(GBFS2Expan.graph, city)
+            path, cost = GBFS2Expan.greedy_best_first_search_Ex(GBFS2Expan.graph, city)
             elapsed = time.time() - start_time
 
             if path:
